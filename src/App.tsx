@@ -1,12 +1,13 @@
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { MainPage, InscriptionDetails } from './pages';
 
+export function App() {
   return (
-    <>
-      <div>
-        Start
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/details" element={<InscriptionDetails />} />
+      </Routes>
+    </Router>
   )
 }
-
-export default App
