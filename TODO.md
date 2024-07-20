@@ -6,3 +6,4 @@ Things I would improve:
 4. Usage of things like `rtk-query`, `SWR` or `@tanstack-query`.
 5. Optimizations (redundant for such a small test app, but I still didn't highlight any of my skills here)
 6. Unit tests (highly important part)
+7. Relative paths 
