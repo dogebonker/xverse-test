@@ -1,4 +1,4 @@
-export function InscriptionDetails() {
+export function InscriptionDetailsPage() {
     return (
         <div>
             <h1>Inscription Details</h1>

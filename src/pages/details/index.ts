@@ -1,1 +1,1 @@
-export * from './InscriptionDetails';
+export * from './InscriptionDetailsPage';
