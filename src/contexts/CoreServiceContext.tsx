@@ -1,4 +1,3 @@
-// src/contexts/coreServiceContext.tsx
 import React, { createContext, useContext } from 'react';
 import { CoreService } from '../services/core.service';
 
