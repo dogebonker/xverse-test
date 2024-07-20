@@ -4,8 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    width: 100%;
+    height: 100%;
     @apply font-main;
     @apply bg-main;
     @apply text-main;
+}
+
+#lfg-xverse {
+    width: 100%;
+    height: 100%;
 }
