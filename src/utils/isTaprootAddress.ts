@@ -1,0 +1,1 @@
+export const isTaprootAddress = (address: string) => address.length === 62 && address.startsWith('bc1');
