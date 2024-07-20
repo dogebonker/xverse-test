@@ -1,3 +1,3 @@
 export * from './main';
-export * from './details';
+export * from './InscriptionDetailsPage';
 export * from './NotFoundPage';

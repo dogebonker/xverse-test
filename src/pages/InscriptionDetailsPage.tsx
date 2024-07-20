@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import rightArrowIcon from '../../assets/right-arrow.svg';
-import { useAppNavigation } from '../../hooks/useAppNavigation';
-import { useCoreService } from '../../contexts/CoreServiceContext';
+import rightArrowIcon from '../assets/right-arrow.svg';
+import { useAppNavigation } from '../hooks/useAppNavigation';
+import { useCoreService } from '../contexts/CoreServiceContext';
 import { useParams } from 'react-router-dom';
-import { useUserStore } from '../../stores/useUserStore';
-import { transformSnakeCaseToTitleCase } from '../../utils/transformSnakeCaseToTitleCase';
+import { useUserStore } from '../stores/useUserStore';
+import { transformSnakeCaseToTitleCase } from '../utils/transformSnakeCaseToTitleCase';
 
 export function InscriptionDetailsPage() {
     const [details, setDetails] = useState<any>();
