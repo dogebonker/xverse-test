@@ -1,11 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { useAppNavigation } from "../hooks/useAppNavigation";
 
 export function NotFoundPage() {
-    const navigate = useNavigate();
-
-    const goToMainPage = () => {
-        navigate('/');
-    };
+    const { goToMainPage } = useAppNavigation();
 
     return (
         <div className="p-4 w-full h-full flex flex-col justify-center items-center">

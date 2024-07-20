@@ -10,8 +10,9 @@ html {
 }
 
 body {
-    width: 100%;
+    max-width: 380px;
     height: 100%;
+    margin: 0 auto;
     @apply font-main;
     @apply bg-main;
     @apply text-main;
