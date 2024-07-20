@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { useShallow } from 'zustand/react/shallow'
 import debounce from 'lodash.debounce';
 import { ResultRow } from './ResultRow';
@@ -6,10 +6,11 @@ import { useCoreService } from '../../../contexts/CoreServiceContext';
 import { useUserStore } from '../../../stores/useUserStore';
 
 export const LookupForm: React.FC = () => {
-    const [walletAddress, setWalletAddress] = useUserStore(
-        useShallow(state => [state.walletAddress, state.setWalletAddress])
+    const [walletAddress, setWalletAddress, results, setResults] = useUserStore(
+        useShallow(state => [
+            state.walletAddress, state.setWalletAddress, state.results, state.setResults
+        ])
     );
-    const [results, setResults] = useState([]);
     const coreService = useCoreService();
 
     const debouncedSetWalletAddress = useCallback(
@@ -37,6 +38,7 @@ export const LookupForm: React.FC = () => {
                 <input
                     id="walletAddress"
                     type="text"
+                    value={walletAddress || ''}
                     onChange={handleInputChange}
                     className="h-[32px] w-full px-4 text-gray-300 bg-[#24252C] focus:outline-none focus:border-blue-500"
                 />
